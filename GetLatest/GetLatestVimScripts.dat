@@ -16,3 +16,5 @@ ScriptID SourceID Filename
 3465 17112 :AutoInstall: tagbar.vim
 2611 17090 :AutoInstall: xptemplate.vim
 2771 16279 :AutoInstall: conque_term.vim
+3590 17028 :AutoInstall: coffee-script.vim
+90 17031 :AutoInstall: vcscommand.vim

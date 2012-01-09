@@ -16,6 +16,7 @@ set ruler " show the cursor position all the time
 set showcmd " display incomplete commands
 set incsearch " do incremental searching
 set autoread
+set iskeyword+='-'
 
 
 "if &t_Co > 2 || has("gui_running")
@@ -77,6 +78,7 @@ set wildmenu
 set matchpairs+=(:),{:},[:],<:>
 set whichwrap=b,s,<,>,[,]
 set foldmethod=indent
+set foldlevel=1
 set diffopt+=iwhite,vertical " 忽略缩进的差异
 "set cursorbind
 set gdefault
@@ -218,10 +220,6 @@ let g:mapleader=","
 
 "map <leader>, ,
 
-map <silent> <leader>rc :tabe ~/.vim/vimrc<cr>
-map <leader>q :q<cr>
-
-
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -291,7 +289,7 @@ nmap <silent> <leader>nt :NERDTree<cr>
 let g:NERDTreeQuitOnOpen=1
 
 nnoremap <silent> <leader>yr :YRShow<cr>
-inoremap <silent> <leader>yr <ESC>:YRShow<cr>
+inoremap <silent> <c-r> <ESC>:YRShow<cr>
 
 " showmarks
 if has("gui_running") || has("gui_macvim")
